@@ -19,6 +19,10 @@ GeminiPi is a family-oriented AI smart speaker built with Raspberry Pi 3 and the
 
 Just say "OK Google" and it will tell you the weather forecast, pollen levels, PM2.5 air quality, earthquake alerts, and more — all in natural Japanese speech. Designed to give advice in easy-to-understand language for children.
 
+## 🗺 システム構成図 / Architecture
+
+👉 [インタラクティブ構成図を見る / View Interactive Architecture](https://jokerzart.github.io/Gemini-Pi/architecture.html)
+
 ---
 
 ## ✨ 機能 / Features
