@@ -1,0 +1,209 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" width="800" height="520">
+<defs>
+  <linearGradient id="pcb" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#2d5016"/><stop offset="100%" stop-color="#1e3a0a"/>
+  </linearGradient>
+  <linearGradient id="adapt" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#2a2a2a"/><stop offset="100%" stop-color="#1a1a1a"/>
+  </linearGradient>
+</defs>
+
+<!-- Background -->
+<rect width="800" height="520" fill="#0d1117"/>
+
+<!-- Title -->
+<text x="400" y="28" text-anchor="middle" font-family="monospace" font-size="13" fill="#4dc8ff" font-weight="700" letter-spacing="3">GEMINIPI — HARDWARE CONNECTION</text>
+<line x1="80" y1="38" x2="720" y2="38" stroke="#1a3a5a" stroke-width="1"/>
+
+<!-- ======== POWER ADAPTER ======== -->
+<g transform="translate(30,75)">
+  <rect x="0" y="0" width="80" height="108" rx="8" fill="url(#adapt)" stroke="#444" stroke-width="2"/>
+  <rect x="8" y="8" width="64" height="46" rx="4" fill="#111" stroke="#333" stroke-width="1"/>
+  <text x="40" y="26" text-anchor="middle" font-family="monospace" font-size="8" fill="#ff8888">5V / 2.5A</text>
+  <text x="40" y="38" text-anchor="middle" font-family="monospace" font-size="7" fill="#ff6666">Micro USB</text>
+  <circle cx="40" cy="70" r="5" fill="#00cc44" opacity="0.9"/>
+  <rect x="25" y="80" width="10" height="20" rx="2" fill="#888" stroke="#666" stroke-width="1"/>
+  <rect x="45" y="80" width="10" height="20" rx="2" fill="#888" stroke="#666" stroke-width="1"/>
+  <rect x="24" y="100" width="32" height="9" rx="3" fill="#555" stroke="#ff4444" stroke-width="1.5"/>
+  <text x="40" y="108" text-anchor="middle" font-family="monospace" font-size="5.5" fill="#ff6666">μUSB OUT</text>
+  <text x="40" y="124" text-anchor="middle" font-family="monospace" font-size="8" fill="#aaa">電源アダプター</text>
+</g>
+
+<!-- Power cables -->
+<path d="M 92 178 Q 155 178 155 228 Q 155 258 198 258" stroke="#ff4444" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="8 4"/>
+<path d="M 92 182 Q 160 182 160 233 Q 160 263 198 263" stroke="#1a1a1a" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="8 4"/>
+<text x="128" y="205" font-family="monospace" font-size="8" fill="#ff4444" text-anchor="middle">5V DC</text>
+<text x="128" y="217" font-family="monospace" font-size="8" fill="#444" text-anchor="middle">GND</text>
+
+<!-- ======== RASPBERRY PI 3 ======== -->
+<g transform="translate(198,158)">
+  <rect x="0" y="0" width="240" height="160" rx="6" fill="url(#pcb)" stroke="#4a8a25" stroke-width="2.5"/>
+  <rect x="0" y="0" width="240" height="160" rx="6" fill="none" stroke="#6ab835" stroke-width="1" opacity="0.4"/>
+
+  <!-- GPIO Header -->
+  <rect x="8" y="6" width="224" height="20" rx="2" fill="#111" stroke="#333" stroke-width="1"/>
+  <g fill="#c8a000">
+    <circle cx="18" cy="12" r="2.2"/><circle cx="30" cy="12" r="2.2"/><circle cx="42" cy="12" r="2.2"/>
+    <circle cx="54" cy="12" r="2.2"/><circle cx="66" cy="12" r="2.2"/><circle cx="78" cy="12" r="2.2"/>
+    <circle cx="90" cy="12" r="2.2"/><circle cx="102" cy="12" r="2.2"/><circle cx="114" cy="12" r="2.2"/>
+    <circle cx="126" cy="12" r="2.2"/><circle cx="138" cy="12" r="2.2"/><circle cx="150" cy="12" r="2.2"/>
+    <circle cx="162" cy="12" r="2.2"/><circle cx="174" cy="12" r="2.2"/><circle cx="186" cy="12" r="2.2"/>
+    <circle cx="198" cy="12" r="2.2"/><circle cx="210" cy="12" r="2.2"/><circle cx="222" cy="12" r="2.2"/>
+    <circle cx="18" cy="19" r="2.2"/><circle cx="30" cy="19" r="2.2"/><circle cx="42" cy="19" r="2.2"/>
+    <circle cx="54" cy="19" r="2.2"/><circle cx="66" cy="19" r="2.2"/><circle cx="78" cy="19" r="2.2"/>
+    <circle cx="90" cy="19" r="2.2"/><circle cx="102" cy="19" r="2.2"/><circle cx="114" cy="19" r="2.2"/>
+    <circle cx="126" cy="19" r="2.2"/><circle cx="138" cy="19" r="2.2"/><circle cx="150" cy="19" r="2.2"/>
+    <circle cx="162" cy="19" r="2.2"/><circle cx="174" cy="19" r="2.2"/><circle cx="186" cy="19" r="2.2"/>
+    <circle cx="198" cy="19" r="2.2"/><circle cx="210" cy="19" r="2.2"/><circle cx="222" cy="19" r="2.2"/>
+  </g>
+  <text x="120" y="33" text-anchor="middle" font-family="monospace" font-size="6" fill="#c8a000">GPIO 40PIN HEADER</text>
+
+  <!-- CPU -->
+  <rect x="82" y="42" width="72" height="62" rx="4" fill="#111" stroke="#444" stroke-width="1.5"/>
+  <rect x="86" y="46" width="64" height="54" rx="2" fill="#0d0d0d"/>
+  <text x="118" y="66" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#666">BCM2837</text>
+  <text x="118" y="78" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#555">Cortex-A53</text>
+  <text x="118" y="89" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#555">1.2GHz 64bit</text>
+  <text x="118" y="100" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#555">1GB RAM</text>
+
+  <!-- USB Ports -->
+  <rect x="202" y="32" width="38" height="16" rx="3" fill="#444" stroke="#333" stroke-width="1.5"/>
+  <rect x="205" y="35" width="32" height="10" rx="1" fill="#222"/>
+  <text x="221" y="44" text-anchor="middle" font-family="monospace" font-size="6" fill="#555">USB</text>
+
+  <rect x="202" y="52" width="38" height="16" rx="3" fill="#444" stroke="#333" stroke-width="1.5"/>
+  <rect x="205" y="55" width="32" height="10" rx="1" fill="#222"/>
+  <text x="221" y="64" text-anchor="middle" font-family="monospace" font-size="6" fill="#555">USB</text>
+
+  <!-- USB 3: AT-CSP1 connected -->
+  <rect x="202" y="72" width="38" height="16" rx="3" fill="#1a4a6a" stroke="#4dc8ff" stroke-width="2"/>
+  <rect x="205" y="75" width="32" height="10" rx="1" fill="#0a2030"/>
+  <text x="221" y="84" text-anchor="middle" font-family="monospace" font-size="6" fill="#4dc8ff">USB ●</text>
+
+  <rect x="202" y="92" width="38" height="16" rx="3" fill="#444" stroke="#333" stroke-width="1.5"/>
+  <rect x="205" y="95" width="32" height="10" rx="1" fill="#222"/>
+  <text x="221" y="104" text-anchor="middle" font-family="monospace" font-size="6" fill="#555">USB</text>
+
+  <!-- Micro USB Power -->
+  <rect x="-14" y="66" width="14" height="22" rx="2" fill="#ff4444" stroke="#cc2222" stroke-width="1.5"/>
+  <text x="-7" y="78" text-anchor="middle" font-family="monospace" font-size="5" fill="#ffaaaa">PWR</text>
+
+  <!-- Ethernet -->
+  <rect x="202" y="116" width="38" height="26" rx="3" fill="#333" stroke="#222" stroke-width="1.5"/>
+  <rect x="205" y="119" width="32" height="20" rx="2" fill="#1a1a1a"/>
+  <circle cx="212" cy="136" r="2" fill="#00cc44" opacity="0.7"/>
+  <circle cx="228" cy="136" r="2" fill="#ffaa00" opacity="0.7"/>
+  <text x="221" y="130" text-anchor="middle" font-family="monospace" font-size="6" fill="#555">LAN</text>
+
+  <!-- MicroSD -->
+  <rect x="55" y="149" width="48" height="11" rx="3" fill="#888" stroke="#666" stroke-width="1"/>
+  <rect x="57" y="151" width="44" height="7" rx="2" fill="#555"/>
+  <text x="79" y="157" text-anchor="middle" font-family="monospace" font-size="6" fill="#aaa">microSD</text>
+
+  <!-- HDMI -->
+  <rect x="148" y="149" width="36" height="11" rx="2" fill="#555" stroke="#444" stroke-width="1"/>
+  <text x="166" y="157" text-anchor="middle" font-family="monospace" font-size="6" fill="#777">HDMI</text>
+
+  <!-- Pi label -->
+  <text x="40" y="76" text-anchor="middle" font-family="monospace" font-size="9" fill="#6ab835" font-weight="700">Raspberry</text>
+  <text x="40" y="88" text-anchor="middle" font-family="monospace" font-size="9" fill="#6ab835" font-weight="700">Pi 3 B+</text>
+
+  <!-- Wi-Fi chip -->
+  <rect x="8" y="108" width="60" height="28" rx="3" fill="#0a1a2a" stroke="#2a5a8a" stroke-width="1"/>
+  <text x="38" y="120" text-anchor="middle" font-family="monospace" font-size="7" fill="#4dc8ff">Wi-Fi</text>
+  <text x="38" y="130" text-anchor="middle" font-family="monospace" font-size="6" fill="#2a6a9a">802.11n BT4</text>
+</g>
+
+<!-- USB Cable Pi → AT-CSP1 -->
+<path d="M 438 242 Q 520 242 520 338 Q 520 385 498 385" stroke="#4dc8ff" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="8 4"/>
+<text x="534" y="296" font-family="monospace" font-size="8" fill="#4dc8ff">USB</text>
+<text x="534" y="308" font-family="monospace" font-size="8" fill="#4dc8ff">Type-A</text>
+<!-- Arrow -->
+<polygon points="498,381 492,393 504,393" fill="#4dc8ff" opacity="0.8"/>
+
+<!-- ======== AT-CSP1 ======== -->
+<g transform="translate(308,328)">
+  <ellipse cx="90" cy="62" rx="88" ry="60" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="2.5"/>
+  <ellipse cx="90" cy="62" rx="80" ry="52" fill="#111" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Speaker grille -->
+  <g fill="#2a2a2a">
+    <circle cx="90" cy="62" r="3" fill="#333"/>
+    <circle cx="102" cy="62" r="2"/><circle cx="78" cy="62" r="2"/>
+    <circle cx="96" cy="52" r="2"/><circle cx="84" cy="52" r="2"/>
+    <circle cx="96" cy="72" r="2"/><circle cx="84" cy="72" r="2"/>
+    <circle cx="114" cy="62" r="2"/><circle cx="66" cy="62" r="2"/>
+    <circle cx="110" cy="51" r="2"/><circle cx="70" cy="51" r="2"/>
+    <circle cx="110" cy="73" r="2"/><circle cx="70" cy="73" r="2"/>
+    <circle cx="102" cy="43" r="2"/><circle cx="78" cy="43" r="2"/>
+    <circle cx="102" cy="81" r="2"/><circle cx="78" cy="81" r="2"/>
+    <circle cx="126" cy="62" r="2"/><circle cx="54" cy="62" r="2"/>
+    <circle cx="122" cy="49" r="2"/><circle cx="58" cy="49" r="2"/>
+    <circle cx="122" cy="75" r="2"/><circle cx="58" cy="75" r="2"/>
+  </g>
+  <!-- Mic center -->
+  <circle cx="90" cy="62" r="18" fill="#111" stroke="#4dc8ff" stroke-width="1.5"/>
+  <rect x="83" y="50" width="14" height="20" rx="7" fill="none" stroke="#4dc8ff" stroke-width="1.5"/>
+  <path d="M 79 65 Q 79 75 90 75 Q 101 75 101 65" fill="none" stroke="#4dc8ff" stroke-width="1.5"/>
+  <line x1="90" y1="75" x2="90" y2="80" stroke="#4dc8ff" stroke-width="1.5"/>
+  <!-- LED ring -->
+  <circle cx="90" cy="62" r="48" fill="none" stroke="#4dc8ff" stroke-width="0.8" opacity="0.3" stroke-dasharray="3 3"/>
+  <!-- USB bottom -->
+  <rect x="70" y="115" width="40" height="13" rx="4" fill="#444" stroke="#4dc8ff" stroke-width="1.5"/>
+  <rect x="73" y="118" width="34" height="7" rx="2" fill="#1a1a1a"/>
+  <text x="90" y="125" text-anchor="middle" font-family="monospace" font-size="6" fill="#4dc8ff">USB-A</text>
+  <!-- Labels -->
+  <text x="90" y="146" text-anchor="middle" font-family="monospace" font-size="10" fill="#4dc8ff" font-weight="700">AT-CSP1</text>
+  <text x="90" y="158" text-anchor="middle" font-family="monospace" font-size="8" fill="#888">SPEAKERPHONE</text>
+</g>
+
+<!-- Wi-Fi signal -->
+<g transform="translate(358,170)" opacity="0.8">
+  <path d="M 0 16 Q 8 8 16 16" fill="none" stroke="#00e5a0" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M -4 21 Q 8 6 20 21" fill="none" stroke="#00e5a0" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M -8 26 Q 8 4 24 26" fill="none" stroke="#00e5a0" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="8" cy="18" r="2" fill="#00e5a0"/>
+  <text x="8" y="36" text-anchor="middle" font-family="monospace" font-size="7" fill="#00e5a0">Wi-Fi</text>
+</g>
+
+<!-- ======== INFO BOX ======== -->
+<g transform="translate(572,75)">
+  <rect x="0" y="0" width="210" height="185" rx="8" fill="#0d1a0d" stroke="#2a4a2a" stroke-width="1.5"/>
+  <rect x="0" y="0" width="210" height="22" rx="8" fill="#1a3a1a"/>
+  <text x="105" y="15" text-anchor="middle" font-family="monospace" font-size="9" fill="#6ab835" font-weight="700">接続まとめ</text>
+  <circle cx="16" cy="40" r="5" fill="#ff4444"/>
+  <text x="28" y="38" font-family="monospace" font-size="8" fill="#ff8888">電源アダプター</text>
+  <text x="28" y="50" font-family="monospace" font-size="7" fill="#ff4444">  5V/2.5A → Micro USB</text>
+  <circle cx="16" cy="72" r="5" fill="#4dc8ff"/>
+  <text x="28" y="70" font-family="monospace" font-size="8" fill="#aaddff">AT-CSP1</text>
+  <text x="28" y="82" font-family="monospace" font-size="7" fill="#4dc8ff">  USB Type-A → USB Port</text>
+  <circle cx="16" cy="104" r="5" fill="#00e5a0"/>
+  <text x="28" y="102" font-family="monospace" font-size="8" fill="#88ffcc">Wi-Fi</text>
+  <text x="28" y="114" font-family="monospace" font-size="7" fill="#00e5a0">  SSH / Dashboard :5000</text>
+  <circle cx="16" cy="136" r="5" fill="#ffaa44"/>
+  <text x="28" y="134" font-family="monospace" font-size="8" fill="#ffcc88">MicroSD</text>
+  <text x="28" y="146" font-family="monospace" font-size="7" fill="#ffaa44">  OS + Python Programs</text>
+  <circle cx="16" cy="168" r="5" fill="#555"/>
+  <text x="28" y="166" font-family="monospace" font-size="8" fill="#666">HDMI</text>
+  <text x="28" y="178" font-family="monospace" font-size="7" fill="#444">  未使用（SSH運用）</text>
+</g>
+
+<!-- LEGEND -->
+<g transform="translate(572,278)">
+  <rect x="0" y="0" width="210" height="120" rx="8" fill="#0d0d1a" stroke="#1a1a3a" stroke-width="1.5"/>
+  <rect x="0" y="0" width="210" height="22" rx="8" fill="#1a1a3a"/>
+  <text x="105" y="15" text-anchor="middle" font-family="monospace" font-size="9" fill="#4dc8ff" font-weight="700">凡例 / Legend</text>
+  <line x1="16" y1="40" x2="50" y2="40" stroke="#ff4444" stroke-width="4" stroke-linecap="round"/>
+  <text x="60" y="44" font-family="monospace" font-size="8" fill="#ff8888">電源ライン 5V DC</text>
+  <line x1="16" y1="62" x2="50" y2="62" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 3"/>
+  <text x="60" y="66" font-family="monospace" font-size="8" fill="#444">グランド GND</text>
+  <line x1="16" y1="84" x2="50" y2="84" stroke="#4dc8ff" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 4"/>
+  <text x="60" y="88" font-family="monospace" font-size="8" fill="#4dc8ff">USB データライン</text>
+  <line x1="16" y1="106" x2="50" y2="106" stroke="#00e5a0" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <text x="60" y="110" font-family="monospace" font-size="8" fill="#00e5a0">Wi-Fi（無線）</text>
+</g>
+
+<!-- Footer -->
+<line x1="80" y1="490" x2="720" y2="490" stroke="#1a3a5a" stroke-width="1"/>
+<text x="400" y="507" text-anchor="middle" font-family="monospace" font-size="8" fill="#2a4a6a" letter-spacing="2">RASPBERRY PI 3 B+ · AT-CSP1 USB SPEAKERPHONE · 5V/2.5A POWER ADAPTER</text>
+
+</svg>
