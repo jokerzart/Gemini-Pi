@@ -23,6 +23,10 @@ Just say "OK Google" and it will tell you the weather forecast, pollen levels, P
 
 👉 [インタラクティブ構成図を見る / View Interactive Architecture](https://jokerzart.github.io/Gemini-Pi/architecture.html)
 
+## 🔌 ハードウェア接続図 / Hardware Diagram
+
+👉 [Fritzing風 ハードウェア接続図を見る / View Hardware Connection Diagram](https://jokerzart.github.io/Gemini-Pi/fritzing_diagram.html)
+
 ---
 
 ## ✨ 機能 / Features
