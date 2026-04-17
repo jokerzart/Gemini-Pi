@@ -1,5 +1,6 @@
 # 🤖 GeminiPi — AI スマートスピーカー
-
+![Architecture](gempiphoto.png)
+![Architecture](gempi.png)
 **Raspberry Pi 3 × Google Gemini AI × AT-CSP1 で作る、家族のための AI スピーカー**
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue)
