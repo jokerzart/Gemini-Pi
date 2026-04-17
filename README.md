@@ -9,7 +9,7 @@
 
 ---
 
-## 📖 概要 / Overview
+## 概要 / Overview
 
 GeminiPi は、Raspberry Pi 3 と Google Gemini API を組み合わせた、家族向けの AI スマートスピーカーです。
 
