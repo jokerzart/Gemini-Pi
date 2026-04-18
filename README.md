@@ -12,13 +12,19 @@
 
 ## 概要 / Overview
 
-GeminiPi は、Raspberry Pi 3 と Google Gemini API を組み合わせた、家族向けの AI スマートスピーカーです。
+日本で買えるスマートスピーカーって、正直まだ賢くない。
+天気は教えてくれるけど、子供の「なんで？」には「wwwなんちゃらドットコムから翻訳しました...」答えられない。
+ちゃんと質問に応えるGemini搭載AIスピーカー　「Gem-Pi(ジェムパイ)」
+GemiPi は Raspberry Pi 3 と Google の最新 AI「Gemini 2.5 Flash」を組み合わせた、自作 AI スピーカーです。
+「OK Google」と呼びかけるだけで、哲学的な質問にも、今日の花粉にも、地震速報にも答えてくれる。
+市販品にはない、本物の AI 会話がここにある。
 
-「OK Google」と呼びかけるだけで、天気予報・花粉情報・PM2.5・地震速報など、生活に役立つ情報を音声で教えてくれます。子供にもわかりやすい言葉でアドバイスしてくれるのが特徴です。
-
-GeminiPi is a family-oriented AI smart speaker built with Raspberry Pi 3 and the Google Gemini API.
-
-Just say "OK Google" and it will tell you the weather forecast, pollen levels, PM2.5 air quality, earthquake alerts, and more — all in natural Japanese speech. Designed to give advice in easy-to-understand language for children.
+Smart speakers in Japan? Still kind of dumb, honestly.
+They'll tell you the weather — but they can't handle a kid asking "why does the sky exist?"
+So I built one that can.
+GeminiPi pairs a Raspberry Pi 3 with Google's latest AI, Gemini 2.5 Flash.
+Say "OK Google" and it handles anything — deep questions, pollen counts, earthquake alerts, morning weather.
+Real AI conversation. No subscription. Built from scratch.
 
 ## システム構成図 / Architecture
 
@@ -48,7 +54,7 @@ Just say "OK Google" and it will tell you the weather forecast, pollen levels, P
 | 💬 会話ログ | 過去の会話をダッシュボードで確認 |
 | ❌ キャンセル機能 | 「キャンセル」でいつでも中断 |
 
-![Architecture](dashboard.png)
+![Architecture](dashboard.png)<img src="hardware_diagram.svg" width="600"/>
 
 ---
 
