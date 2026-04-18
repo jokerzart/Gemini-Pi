@@ -13,7 +13,7 @@
 ## 概要 / Overview
 
 日本で買えるスマートスピーカーって、正直まだ賢くない。
-天気は教えてくれるけど、子供の「なんで？」には「wwwなんちゃらドットコムから翻訳しました...」答えられない。
+天気は教えてくれるけど、子供の「なんで？」には「www　なんちゃらドットコムから翻訳しました...」答えられない。
 ちゃんと質問に応えるGemini搭載AIスピーカー　「Gem-Pi(ジェムパイ)」
 GemiPi は Raspberry Pi 3 と Google の最新 AI「Gemini 2.5 Flash」を組み合わせた、自作 AI スピーカーです。
 「OK Google」と呼びかけるだけで、哲学的な質問にも、今日の花粉にも、地震速報にも答えてくれる。
@@ -54,7 +54,7 @@ Real AI conversation. No subscription. Built from scratch.
 | 💬 会話ログ | 過去の会話をダッシュボードで確認 |
 | ❌ キャンセル機能 | 「キャンセル」でいつでも中断 |
 
-![Architecture](dashboard.png)<img src="hardware_diagram.svg" width="600"/>
+![Architecture]<img src="dashboard.png" width="600"/>
 
 ---
 
