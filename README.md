@@ -48,6 +48,8 @@ Just say "OK Google" and it will tell you the weather forecast, pollen levels, P
 | 💬 会話ログ | 過去の会話をダッシュボードで確認 |
 | ❌ キャンセル機能 | 「キャンセル」でいつでも中断 |
 
+![Architecture](dashboard.png)
+
 ---
 
 ## 必要なもの / Requirements
