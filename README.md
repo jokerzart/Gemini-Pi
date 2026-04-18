@@ -1,6 +1,7 @@
 # 🤖 Gem-Pi — Gemini搭載AIスマートスピーカー
 
 <img src="gempi.png" width="450"/>
+
 ![Architecture](gempiphoto.png)
 **Raspberry Pi 3 × Google Gemini AI × AT-CSP1 で作る、家族のための AI スピーカー**
 
