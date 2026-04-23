@@ -1,6 +1,12 @@
 #!/bin/bash
 echo "=== ジェミニパイ 起動中 ==="
 
+# 音量を最大に設定
+amixer -c 2 sset 'PCM' 100%
+
+# ALSAの設定を保存
+sudo alsactl store
+
 # 古いプロセスを終了
 pkill -f smart_speaker.py
 pkill -f dashboard_server.py

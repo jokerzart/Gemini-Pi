@@ -7,6 +7,7 @@ import tempfile
 import websocket
 from gtts import gTTS
 from config import AUDIO_DEVICE, TEMPO, LOCATION_NAME, PREFECTURE, MIN_INTENSITY
+import oled_display as oled
 
 TARGET_PREF  = PREFECTURE
   # 震度2以上
@@ -77,6 +78,7 @@ def on_message(ws, message):
                    f"マグニチュード{magnitude}、"
                    f"福岡県での予測震度は{intensity_to_text(fukuoka_int)}です。"
                    f"すぐに身を守る行動をとってください！")
+            oled.set_earthquake(msg)
             speak_alert(msg)
 
         # 地震情報（発生後）: code=551
@@ -103,6 +105,7 @@ def on_message(ws, message):
 
             msg = (f"地震情報です。{name}でマグニチュード{magnitude}の地震が発生しました。"
                    f"福岡県の震度は{intensity_to_text(fukuoka_int)}です。{tsunami_msg}")
+            oled.set_earthquake(msg)
             speak_alert(msg)
 
     except Exception as e:
