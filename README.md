@@ -54,8 +54,12 @@ Real AI conversation. No subscription. Built from scratch.
 | 💬 会話ログ | 過去の会話をダッシュボードで確認 |
 | ❌ キャンセル機能 | 「キャンセル」でいつでも中断 |
 
+<<<<<<< HEAD
+![Architecture](dashboard.png)
+=======
 
 ![Architecture](dashboard.png)<img src="hardware_diagram.svg" width="600"/>
+>>>>>>> f0ac71a (update README: dashboard features)
 
 ---
 

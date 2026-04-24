@@ -420,6 +420,7 @@ def api_control():
     if cmd == 'start':
         running, _ = is_speaker_running()
         if running: return jsonify({"message":"すでに起動中です"})
+        subprocess.run(["amixer", "-c", "2", "sset", "PCM", "100%"])
         subprocess.Popen(["python3", os.path.expanduser("~/smart_speaker.py")],
             stdout=open(os.path.expanduser("~/speaker.log"),"a"), stderr=subprocess.STDOUT)
         return jsonify({"message":"起動しました ▶"})
@@ -431,6 +432,7 @@ def api_control():
     elif cmd == 'restart':
         running, pid = is_speaker_running()
         if running: subprocess.run(["kill", str(pid)]); time.sleep(1)
+        subprocess.run(["amixer", "-c", "2", "sset", "PCM", "100%"])
         subprocess.Popen(["python3", os.path.expanduser("~/smart_speaker.py")],
             stdout=open(os.path.expanduser("~/speaker.log"),"a"), stderr=subprocess.STDOUT)
         return jsonify({"message":"再起動しました 🔄"})
