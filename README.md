@@ -56,7 +56,7 @@ Real AI conversation. No subscription. Built from scratch.
 
 
 
-![Architecture](dashboard.png)<img src="hardware_diagram.svg" width="600"/>
+<img src="dashboard.png" width="600"/>
 
 
 ---
